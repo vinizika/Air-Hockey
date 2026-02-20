@@ -907,6 +907,7 @@ GameObject:
   - component: {fileID: 1117201234}
   - component: {fileID: 1117201233}
   - component: {fileID: 1117201236}
+  - component: {fileID: 1117201237}
   m_Layer: 0
   m_Name: puck_0
   m_TagString: Untagged
@@ -1051,6 +1052,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &1117201237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117201232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9d25937426d48e1b90c2493ecb2cc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  hitClip: {fileID: 8300000, guid: c8e4530102d1f45df8e49b62398ee970, type: 3}
 --- !u!1 &1122107452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,6 +1104,8 @@ MonoBehaviour:
   minY: 0
   maxY: 6
   speed: 12
+  stuckSpeedThreshold: 0.05
+  stuckPushTime: 0.5
 --- !u!58 &1122107454
 CircleCollider2D:
   m_ObjectHideFlags: 0
